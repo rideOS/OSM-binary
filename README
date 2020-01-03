@@ -1,3 +1,13 @@
+rideOS Instructions
+======
+In order to publish an artifact of our forked version of this library.
+1. `brew install maven` (if not installed)
+1. change version number in pom.xml
+1. `mvn package`
+1. find the jar that the previous command outputs.
+
+The pom.xml is modified to shade the package names in the output jars to match the packaname that our code expects:
+`org.openstreetmap.osmosis.osmbinary`.
 
 OSMPBF
 ======
